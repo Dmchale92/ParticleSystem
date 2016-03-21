@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Particle System Demo - Asymmetrik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Particle System Demo">
+    <meta name="author" content="dmchale92">
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<textarea style="display:none;" id="exported"></textarea>
+<div class="row">
+    <div class="header">
+        <span style="color: #00FFFF;">Particle System - Asymmetrik</span>
+          <span>Mouse Move:
+          <select id="mousemoveSelector">
+              <option id="mousemove-leaves" value="leaves">Leaves</option>
+              <option id="mousemove-snow" value="snow">Snow</option>
+              <option id="mousemove-insects" value="insects">Insects</option>
+          </select>
+          </span>
+
+          <span>Mouse Click:
+          <select id="mousedownSelector">
+              <option id="mousedown-leaves" value="leaves">Leaves</option>
+              <option id="mousedown-snow" value="snow">Snow</option>
+              <option id="mousedown-insects" value="insects">Insects</option>
+          </select>
+          </span>
+    </div>
+</div>
+<div class="row">
+    <div class="controls">
+        <button class="button-start" id="button-play-start">Start</button>
+        <button class="button-pause" id="button-play-pause">Pause</button>
+        <button class="button-reset" id="button-play-reset">Reset</button>
+    </div>
+</div>
+<div id="svgContainer"></div>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+</body>
+</html>
